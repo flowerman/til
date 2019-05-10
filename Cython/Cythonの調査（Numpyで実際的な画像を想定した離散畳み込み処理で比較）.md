@@ -105,10 +105,8 @@ filter = np.arange(81, dtype=np.int).reshape((9, 9))
 
 ### 所見
 比較結果  
-|条件  |内容  |
-|:---|:---|
-|pure Python  |414 ms ± 1.57 ms per loop (mean ± std. dev. of 3 runs, 2 loops each)  |
-|Cython すべての型に型指定  |372 ms ± 301 µs per loop (mean ± std. dev. of 3 runs, 2 loops each)  |  
+pure Python 414 ms ± 1.57 ms per loop (mean ± std. dev. of 3 runs, 2 loops each)   
+Cython すべての型に型指定 372 ms ± 301 µs per loop (mean ± std. dev. of 3 runs, 2 loops each)   
 
 この比較ではあまり効果があがっていない。  
 インデックスの取り方とか工夫が必要かもしれない。今後の課題。  
